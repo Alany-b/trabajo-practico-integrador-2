@@ -53,12 +53,14 @@ const UserSchema = new Schema(
         required: false,
         default: null }, // soft delete
     },
+  },
+    { 
+
     timestamps:true,
-    },
-  {
     versionKey: false,
-  }
+    }
 );
+
 
 
 export const UserModel = model("User", UserSchema);
