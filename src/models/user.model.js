@@ -48,19 +48,17 @@ const UserSchema = new Schema(
         type: Date,
         required: false,
       },
-       deletedAt: {
-        type: Date, 
+      deletedAt: {
+        type: Date,
         required: false,
-        default: null }, // soft delete
+        default: null,
+      }, // soft delete
     },
   },
-    { 
-
-    timestamps:true,
+  {
+    timestamps: true,
     versionKey: false,
-    }
+  }
 );
-
-
 
 export const UserModel = model("User", UserSchema);
