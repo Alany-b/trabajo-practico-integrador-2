@@ -6,13 +6,13 @@ import {
   getTagById,
   updateTag,
 } from "../controllers/tag.controller.js";
-import { authMiddleware } from "../middlewares/auth.middleware.js";
-import { adminMiddleware } from "../middlewares/admin.middleware.js";
+import { authMiddleware } from "../middlewares/authMiddleware.js";
+import { adminMiddleware } from "../middlewares/adminMiddleware.js";
 import {
   idTagValidations,
   updateTagValidations,
 } from "../middlewares/validations/tag.validations.js";
-import { matchedDataMiddleware } from "../middlewares/matched_data.middleware.js";
+import { matchedDataMiddleware } from "../middlewares/matchedDataMiddleware.js";
 import { applyValidation } from "../middlewares/validator.js";
 
 export const routerTag = Router();

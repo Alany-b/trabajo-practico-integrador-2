@@ -15,9 +15,9 @@ const TagSchema = new Schema(
       maxlength: 200,
       required: false,
     },
-    timestamps: true,
   },
   {
+    timestamps: true,
     versionKey: false,
   }
 );

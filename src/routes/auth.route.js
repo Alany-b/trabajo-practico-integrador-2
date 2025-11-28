@@ -9,10 +9,10 @@ import {
 import {
   profileUpdateValidations,
   registerCreateValidations,
-} from "../middlewares/validations/auth.validation.js";
+} from "../middlewares/validations/auth.validations.js";
 import { applyValidation } from "../middlewares/validator.js";
-import { authMiddleware } from "../middlewares/auth.middleware.js";
-import { matchedDataMiddleware } from "../middlewares/matched_data.middleware.js";
+import { authMiddleware } from "../middlewares/authMiddleware.js";
+import { matchedDataMiddleware } from "../middlewares/matchedDataMiddleware.js";
 
 const routerAuth = Router();
 

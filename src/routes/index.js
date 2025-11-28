@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { routerArticle } from "./article.routes.js";
-import { routerComment } from "./comment.routes.js";
-import { routerTag } from "./tag.routes.js";
-import { routerUser } from "./user.routes.js";
-import routerAuth from "./auth.routes.js";
+import { routerArticle } from "./article.route.js";
+import { routerComment } from "./comment.route.js";
+import { routerTag } from "./tag.route.js";
+import { routerUser } from "./user.route.js";
+import routerAuth from "./auth.route.js";
 
 const router = Router();
 

@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-const  ObjectId  = Schema.Types.ObjectId;
+const ObjectId = Schema.Types.ObjectId;
 
 const ArticleSchema = new Schema(
   {
@@ -15,7 +15,7 @@ const ArticleSchema = new Schema(
     },
     excerpt: {
       type: String,
-        maxlength: 500,
+      maxlength: 500,
       required: false,
     },
     status: {
@@ -24,19 +24,20 @@ const ArticleSchema = new Schema(
       default: "published",
     },
     author: {
-        type: ObjectId,
-        ref: "User",
-     },
-     tags: [{
+      type: ObjectId,
+      ref: "User",
+    },
+    tags: [
+      {
         type: ObjectId,
         ref: "Tag",
-        }],
-    timestamps:true,
-    },
+      },
+    ],
+  },
   {
+    timestamps: true,
     versionKey: false,
   }
 );
-
 
 export const ArticleModel = model("Article", ArticleSchema);
